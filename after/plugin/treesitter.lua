@@ -1,4 +1,4 @@
-require 'nvim-treesitter.install'.compilers = { "clang" }
+require 'nvim-treesitter.install'.compilers = { "gcc" }
 require'nvim-treesitter.configs'.setup {
 
   -- A list of parser names, or "all" (the four listed parsers should always be installed)
