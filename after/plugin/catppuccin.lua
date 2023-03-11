@@ -5,7 +5,7 @@ require("catppuccin").setup({
         dark = "mocha",
     },
     transparent_background = true,
-    show_end_of_buffer = false, -- show the '~' characters after the end of buffers
+    show_end_of_buffer = true, -- show the '~' characters after the end of buffers
     term_colors = true,
     dim_inactive = {
         enabled = false,
@@ -28,7 +28,9 @@ require("catppuccin").setup({
         types = {},
         operators = {},
     },
-    color_overrides = {},
+    color_overrides = {
+
+    },
     custom_highlights = {},
     integrations = {
         cmp = true,
@@ -43,3 +45,4 @@ require("catppuccin").setup({
 
 -- setup must be called before loading
 vim.cmd.colorscheme "catppuccin"
+vim.api.nvim_set_hl(0, 'LineNr', { fg = "lightblue"} )
