@@ -34,3 +34,4 @@ vim.keymap.set("n", "<leader>.", vim.cmd.bnext)
 --save
 vim.keymap.set("n", "<leader>s", vim.cmd.w)
 vim.api.nvim_set_keymap("n", "<leader>br", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true })
+vim.api.nvim_set_hl(0, 'LineNr', { fg = "lightblue"} )
