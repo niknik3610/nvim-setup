@@ -1,5 +1,6 @@
 require("setup")
 
+--Downloads Lazy at startup
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
@@ -15,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " "
 
+--All Plugins added here:
 require('lazy').setup({
     -- Packer can manage itself
     'joshdick/onedark.vim',
@@ -27,14 +29,12 @@ require('lazy').setup({
 
     'nvim-telescope/telescope-fzf-native.nvim',
     'nvim-tree/nvim-web-devicons',
-
     'nvim-treesitter/nvim-treesitter',
     'nvim-treesitter/playground',
     'mbbill/undotree',
     'tpope/vim-fugitive',
     'vim-airline/vim-airline',
     'vim-airline/vim-airline-themes',
-
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',

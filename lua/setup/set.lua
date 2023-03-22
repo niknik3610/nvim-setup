@@ -29,11 +29,12 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>bd", vim.cmd.bd)
 
 --forward and backward tab
-vim.keymap.set("n", "<leader>,", vim.cmd.bprevious)
-vim.keymap.set("n", "<leader>.", vim.cmd.bnext)
+vim.keymap.set("n", "<leader>k", vim.cmd.bprevious)
+vim.keymap.set("n", "<leader>j", vim.cmd.bnext)
 
 --save
 vim.keymap.set("n", "<leader>s", vim.cmd.w)
+
 vim.api.nvim_set_keymap("n", "<leader>br", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true })
 vim.opt.guifont = { "Droid Sans Mono for Powerline", "h12" }
 

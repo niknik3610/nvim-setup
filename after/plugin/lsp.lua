@@ -42,7 +42,7 @@ vim.diagnostic.config({
     prefix = '● ',
   },
   update_in_insert = true,
-  underline = true,
+  underline = false,
   severity_sort = true,
   float = {
     focusable = false,
