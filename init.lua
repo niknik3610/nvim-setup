@@ -26,7 +26,6 @@ require('lazy').setup({
         -- or                            , branch = '0.1.x',
         dependencies = { {'nvim-lua/plenary.nvim'} }
     },
-
     'nvim-telescope/telescope-fzf-native.nvim',
     'nvim-tree/nvim-web-devicons',
     'nvim-treesitter/nvim-treesitter',
@@ -34,7 +33,7 @@ require('lazy').setup({
     'mbbill/undotree',
     'tpope/vim-fugitive',
     {
-        'folke/trouble.nvim', 
+        'folke/trouble.nvim',
         'nvim-lualine/lualine.nvim',
         'akinsho/bufferline.nvim',
         dependencies = {
