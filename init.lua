@@ -33,8 +33,14 @@ require('lazy').setup({
     'nvim-treesitter/playground',
     'mbbill/undotree',
     'tpope/vim-fugitive',
-    'vim-airline/vim-airline',
-    'vim-airline/vim-airline-themes',
+    {
+        'folke/trouble.nvim', 
+        'nvim-lualine/lualine.nvim',
+        'akinsho/bufferline.nvim',
+        dependencies = {
+            {'nvim-tree/nvim-web-devicons'}
+        }
+    },
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
