@@ -18,17 +18,17 @@ require('lualine').setup {
     }
   },
   sections = {
-    lualine_a = {'mode'},
-    lualine_b = {'branch', 'diff'},
-    lualine_c = {''},
-    lualine_x = {'filetype'},
-    lualine_y = {'diagnostics'},
-    lualine_z = {'location'}
+    lualine_a = {'filename'},
+    lualine_b = {},
+    lualine_c = {},
+    lualine_x = {'diagnostics'},
+    lualine_y = {'branch', 'diff'},
+    lualine_z = {}
   },
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = {'filename'},
+    lualine_c = {},
     lualine_x = {'location'},
     lualine_y = {},
     lualine_z = {}

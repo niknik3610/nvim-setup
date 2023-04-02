@@ -32,10 +32,10 @@ require('lazy').setup({
     'nvim-treesitter/playground',
     'mbbill/undotree',
     'tpope/vim-fugitive',
+    'ThePrimeagen/harpoon',
     {
         'folke/trouble.nvim',
         'nvim-lualine/lualine.nvim',
-        'akinsho/bufferline.nvim',
         dependencies = {
             {'nvim-tree/nvim-web-devicons'}
         }

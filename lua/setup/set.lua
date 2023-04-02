@@ -35,7 +35,6 @@ vim.keymap.set("n", "<leader>j", vim.cmd.bnext)
 --save
 vim.keymap.set("n", "<leader>s", vim.cmd.w)
 
-vim.api.nvim_set_keymap("n", "<leader>br", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true })
 vim.opt.guifont = { "Droid Sans Mono for Powerline", "h12" }
 
 
