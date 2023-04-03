@@ -33,6 +33,7 @@ require('lazy').setup({
     'mbbill/undotree',
     'tpope/vim-fugitive',
     'ThePrimeagen/harpoon',
+    'zbirenbaum/copilot.lua',
     {
         'folke/trouble.nvim',
         'nvim-lualine/lualine.nvim',
