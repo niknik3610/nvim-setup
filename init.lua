@@ -38,8 +38,7 @@ require('lazy').setup({
         'folke/trouble.nvim',
         'nvim-lualine/lualine.nvim',
         dependencies = {
-            {'nvim-tree/nvim-web-devicons'}
-        }
+            {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}        }
     },
     {
         'VonHeikemen/lsp-zero.nvim',
@@ -65,4 +64,5 @@ require('lazy').setup({
     },
 })
 
-require 'nvim-treesitter.install'.compilers = { "clang" }
+-- Breaks some compilation of treesitter sometimes
+-- require 'nvim-treesitter.install'.compilers = { "clang" }
