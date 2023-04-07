@@ -64,5 +64,5 @@ require('lazy').setup({
     },
 })
 
--- Breaks some compilation of treesitter sometimes
+-- Breaks some compilation of treesitter-langauges sometimes
 -- require 'nvim-treesitter.install'.compilers = { "clang" }
