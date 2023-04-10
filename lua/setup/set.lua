@@ -1,6 +1,8 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+--bla bla
+
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -22,6 +24,11 @@ vim.g.mapleader = " "
 vim.g.netrw_banner = 0;
 vim.opt.swapfile = false
 
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
+
+
 --opens explorer
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -34,6 +41,13 @@ vim.keymap.set("n", "<leader>j", vim.cmd.bnext)
 
 --save
 vim.keymap.set("n", "<leader>s", vim.cmd.w)
+
+--up and down
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+--paste without copying
+vim.keymap.set("x", "<leader>p", [["_dP]])
 
 vim.opt.guifont = { "Droid Sans Mono for Powerline", "h12" }
 
