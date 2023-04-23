@@ -41,9 +41,10 @@ vim.diagnostic.config({
   virtual_text = {
     source = "if_many",
     prefix = '● ',
+    spacing = 8,
   },
   update_in_insert = true,
-  underline = true,
+  underline = false,
   severity_sort = true,
   float = {
     focusable = false,
