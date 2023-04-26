@@ -1,6 +1,7 @@
+--[=[
 require('copilot').setup({
   panel = {
-    enabled = true,
+    enabled = false,
     auto_refresh = false,
     keymap = {
       jump_prev = "[[",
@@ -39,5 +40,6 @@ require('copilot').setup({
     ["."] = false,
   },
   copilot_node_command = 'node', -- Node.js version must be > 16.x
-  server_opts_overrides = {},
+  server_opts_overrides = {}, 
 })
+]=]

@@ -43,8 +43,8 @@ vim.diagnostic.config({
     prefix = '● ',
     spacing = 8,
   },
-  update_in_insert = true,
-  underline = false,
+  update_in_insert = false,
+  underline = true,
   severity_sort = true,
   float = {
     focusable = false,
