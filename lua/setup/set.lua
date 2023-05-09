@@ -46,7 +46,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 --paste without copying
 vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("n", "<F8>", ":!./build.sh<CR>")
 
 vim.opt.guifont = { "Droid Sans Mono for Powerline", "h12" }
-
-

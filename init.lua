@@ -18,9 +18,10 @@ vim.g.mapleader = " "
 
 --All Plugins added here:
 require('lazy').setup({
-    -- Packer can manage itself
+    --themes
     'joshdick/onedark.vim',
     'catppuccin/nvim',
+
     {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         -- or                            , branch = '0.1.x',
@@ -35,37 +36,34 @@ require('lazy').setup({
     'ThePrimeagen/harpoon',
     'numToStr/Comment.nvim',
     {
-    --'zbirenbaum/copilot.lua',
+        --'zbirenbaum/copilot.lua',
     },
     {
         'folke/trouble.nvim',
         'nvim-lualine/lualine.nvim',
         dependencies = {
-            {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}        }
+            {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
+        }
     },
     {
         'VonHeikemen/lsp-zero.nvim',
-        branch = 'v1.x',
+        branch = 'v2.x',
         dependencies = {
             -- LSP Support
             {'neovim/nvim-lspconfig'},             -- Required
-            {'williamboman/mason.nvim'},           -- Optional
-            {'williamboman/mason-lspconfig.nvim'}, -- Optional
+            {                                      -- Optional
+            'williamboman/mason.nvim',
+        },
+        {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-            -- Autocompletion
-            {'hrsh7th/nvim-cmp'},         -- Required
-            {'hrsh7th/cmp-nvim-lsp'},     -- Required
-            {'hrsh7th/cmp-buffer'},       -- Optional
-            {'hrsh7th/cmp-path'},         -- Optional
-            {'saadparwaiz1/cmp_luasnip'}, -- Optional
-            {'hrsh7th/cmp-nvim-lua'},     -- Optional
-
-            -- Snippets
-            {'L3MON4D3/LuaSnip'},             -- Required
-            {'rafamadriz/friendly-snippets'}, -- Optional
+        -- Autocompletion
+        {'hrsh7th/nvim-cmp'},     -- Required
+        {'hrsh7th/cmp-nvim-lsp'}, -- Required
+        {'L3MON4D3/LuaSnip'},     -- Required
         }
     },
 })
 
 -- Breaks some compilation of treesitter-langauges sometimes
 -- require 'nvim-treesitter.install'.compilers = { "clang" }
+
