@@ -53,4 +53,14 @@ vim.diagnostic.config({
   },
 })
 
+local installed = require('mason-lspconfig').get_installed_servers()
+
+for _, name in ipairs(installed) do
+  local server = require('lspconfig')[name]
+  local ok = pcall(server.setup, {})
+  if not ok then
+    print('failed to setup' .. name)
+  end
+end
+
 lsp.setup()

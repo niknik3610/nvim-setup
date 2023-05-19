@@ -31,6 +31,7 @@ require('lazy').setup({
     'nvim-tree/nvim-web-devicons',
     'nvim-treesitter/nvim-treesitter',
     'nvim-treesitter/playground',
+    'nvim-treesitter/nvim-treesitter-context',
     'mbbill/undotree',
     'tpope/vim-fugitive',
     'ThePrimeagen/harpoon',

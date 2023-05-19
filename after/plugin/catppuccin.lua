@@ -1,5 +1,5 @@
 require("catppuccin").setup({
-    flavour = "mocha", -- latte, frappe, macchiato, mocha
+    flavour = "frappe", -- latte, frappe, macchiato, mocha
     background = { -- :h background
         light = "latte",
         dark = "mocha",
@@ -44,5 +44,5 @@ require("catppuccin").setup({
 })
 
 -- setup must be called before loading
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "onedark"
 vim.api.nvim_set_hl(0, 'LineNr', { fg = "lightblue"} )
