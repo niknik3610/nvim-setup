@@ -39,6 +39,7 @@ vim.keymap.set("n", "<leader>j", vim.cmd.bnext)
 
 --save
 vim.keymap.set("n", "<leader>s", vim.cmd.w)
+vim.keymap.set("n", "<leader>cf", ":!npx prettier . --write<CR>")
 
 --up and down
 vim.keymap.set("n", "<C-d>", "<C-d>zz")

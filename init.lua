@@ -36,6 +36,7 @@ require('lazy').setup({
     'tpope/vim-fugitive',
     'ThePrimeagen/harpoon',
     'numToStr/Comment.nvim',
+    'MunifTanjim/prettier.nvim',
     {
         --'zbirenbaum/copilot.lua',
     },
