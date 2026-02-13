@@ -19,8 +19,9 @@ vim.g.mapleader = " "
 --All Plugins added here:
 require('lazy').setup({
     --themes
-    'joshdick/onedark.vim',
-    'catppuccin/nvim',
+    -- 'joshdick/onedark.vim',
+    -- 'catppuccin/nvim',
+    'rose-pine/neovim',
 
     {
         'nvim-telescope/telescope.nvim', tag = '0.1.5',

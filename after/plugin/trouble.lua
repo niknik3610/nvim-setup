@@ -1,8 +1,5 @@
 require('trouble').setup({
-    vim.keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>",
+    vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>",
     {silent = true, noremap = true}
     );
-    vim.keymap.set("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>",
-    {silent = true, noremap = true}
-    )
 })

@@ -20,7 +20,6 @@ lsp.setup_nvim_cmp({
     mapping = cmp_mappings
 })
 
-
 --binds that only work on files with lsp
 lsp.on_attach(function(client, bufnr)
     local opts = {buffer = bufnr, remap = false}
@@ -52,6 +51,17 @@ vim.diagnostic.config({
   },
 })
 
+vim.lsp.config["clangd"] = {
+  on_attach = function(client, bufnr)
+    -- Options for the keymap: 
+    -- 'buffer = bufnr' ensures this ONLY works in C/C++ files
+    local opts = { buffer = bufnr, silent = true, desc = "Switch Source/Header" }
+
+    -- Clangd specifically provides a command called 'ClangdSwitchSourceHeader'
+    vim.keymap.set('n', '<leader>h', '<cmd>ClangdSwitchSourceHeader<cr>', opts)
+  end,
+}
+
 local installed = require('mason-lspconfig').get_installed_servers()
 
 for _, name in ipairs(installed) do
@@ -63,3 +73,8 @@ for _, name in ipairs(installed) do
 end
 
 lsp.setup()
+
+local util = require('lspconfig.util')
+lsp.configure('wgsl-analyzer', {
+    root_dir = util.root_pattern('.git')
+});
